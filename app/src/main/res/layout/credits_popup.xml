@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/credits_popup_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/credit_tv"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorBananaYellow"
+        android:padding="8dp"
+        android:text="Credits:"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:text="Jonathan Pierson: Developer"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@+id/credit_tv"
+        app:layout_constraintStart_toStartOf="@+id/credit_tv"
+        app:layout_constraintTop_toTopOf="@+id/credit_tv" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Emily Pierson: Sound Designer"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@+id/credit_tv"
+        app:layout_constraintStart_toStartOf="@+id/credit_tv"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Nathaniel Hebbert: Art Designer"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@+id/credit_tv"
+        app:layout_constraintStart_toStartOf="@+id/credit_tv"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+</android.support.constraint.ConstraintLayout>

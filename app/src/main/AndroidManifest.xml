@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lucidexperience.onecolor">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service android:enabled="true" android:name=".BackgroundSoundService" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+
+            <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts" />
+
+        </activity>
+        <activity android:name=".LevelScreen">
+
+            <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts" />
+
+        </activity>
+        <activity android:name=".Tutorial"/>
+        <activity android:name=".NoLevel"/>
+        <activity android:name=".Level1"/>
+        <activity android:name=".Level2"/>
+        <activity android:name=".Level3"/>
+        <activity android:name=".Level4"/>
+        <activity android:name=".Level5"/>
+        <activity android:name=".Level6"/>
+        <activity android:name=".Level7"/>
+        <activity android:name=".Level8"/>
+        <activity android:name=".Level9"/>
+        <activity android:name=".Level10"/>
+        <activity android:name=".Level11"/>
+        <activity android:name=".Level12"/>
+        <activity android:name=".Level13"/>
+        <activity android:name=".Level14"/>
+        <activity android:name=".Level15"/>
+        <activity android:name=".Level16"/>
+        <activity android:name=".Level17"/>
+        <activity android:name=".Level18"/>
+        <activity android:name=".Level19"/>
+        <activity android:name=".Level20"/>
+        <activity android:name=".Level21"/>
+        <activity android:name=".Level22"/>
+        <activity android:name=".Level23"/>
+        <activity android:name=".Level24"/>
+        <activity android:name=".Level25"/>
+        <activity android:name=".Level26"/>
+        <activity android:name=".Level27"/>
+        <activity android:name=".Level28"/>
+        <activity android:name=".Level29"/>
+        <activity android:name=".Level30"/>
+        <activity android:name=".Level31"/>
+        <activity android:name=".Level32"/>
+        <activity android:name=".Level33"/>
+        <activity android:name=".Level34"/>
+        <activity android:name=".Level35"/>
+        <activity android:name=".Level36"/>
+        <activity android:name=".Level37"/>
+        <activity android:name=".Level38"/>
+        <activity android:name=".Level39"/>
+        <activity android:name=".Level40"/>
+        <activity android:name=".Level41"/>
+        <activity android:name=".Level42"/>
+        <activity android:name=".Level43"/>
+        <activity android:name=".Level44"/>
+        <activity android:name=".Level45"/>
+        <activity android:name=".Level46"/>
+        <activity android:name=".Level47"/>
+        <activity android:name=".Level48"/>
+        <activity android:name=".Level49"/>
+        <activity android:name=".Level50"/>
+        <activity android:name=".Level51"/>
+        <activity android:name=".Level52"/>
+        <activity android:name=".Level53"/>
+        <activity android:name=".Level54"/>
+        <activity android:name=".Level55"/>
+        <activity android:name=".Level56"/>
+        <activity android:name=".Level57"/>
+        <activity android:name=".Level58"/>
+        <activity android:name=".Level59"/>
+        <activity android:name=".Level60"/>
+    </application>
+
+</manifest>

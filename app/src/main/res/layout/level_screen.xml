@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/level_select"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="75dp"
+        android:paddingBottom="75dp"
+        android:clipToPadding="true"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/tutorial_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:context=".LevelScreen">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/level_1_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_1"
+                    android:onClick="levelClick"
+                    android:text="@string/level_1" />
+
+                <Button
+                    android:id="@+id/level_2_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_2"
+                    android:onClick="levelClick"
+                    android:text="@string/level_2" />
+
+                <Button
+                    android:id="@+id/level_3_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_3"
+                    android:onClick="levelClick"
+                    android:text="@string/level_3" />
+
+                <Button
+                    android:id="@+id/level_4_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_4"
+                    android:onClick="levelClick"
+                    android:text="@string/level_4" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/level_5_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_5"
+                    android:onClick="levelClick"
+                    android:text="@string/level_5" />
+
+                <Button
+                    android:id="@+id/level_6_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_6"
+                    android:onClick="levelClick"
+                    android:text="@string/level_6" />
+
+                <Button
+                    android:id="@+id/level_7_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_7"
+                    android:onClick="levelClick"
+                    android:text="@string/level_7" />
+
+                <Button
+                    android:id="@+id/level_8_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_8"
+                    android:onClick="levelClick"
+                    android:text="@string/level_8" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/level_9_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_9"
+                    android:onClick="levelClick"
+                    android:text="@string/level_9" />
+
+                <Button
+                    android:id="@+id/level_10_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_10"
+                    android:onClick="levelClick"
+                    android:text="@string/level_10" />
+
+                <Button
+                    android:id="@+id/level_11_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_11"
+                    android:onClick="levelClick"
+                    android:text="@string/level_11" />
+
+                <Button
+                    android:id="@+id/level_12_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_12"
+                    android:onClick="levelClick"
+                    android:text="@string/level_12" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/level_13_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_13"
+                    android:onClick="levelClick"
+                    android:text="@string/level_13" />
+
+                <Button
+                    android:id="@+id/level_14_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_14"
+                    android:onClick="levelClick"
+                    android:text="@string/level_14" />
+
+                <Button
+                    android:id="@+id/level_15_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_15"
+                    android:onClick="levelClick"
+                    android:text="@string/level_15" />
+
+                <Button
+                    android:id="@+id/level_16_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_16"
+                    android:onClick="levelClick"
+                    android:text="@string/level_16" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/level_17_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_17"
+                    android:onClick="levelClick"
+                    android:text="@string/level_17" />
+
+                <Button
+                    android:id="@+id/level_18_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_18"
+                    android:onClick="levelClick"
+                    android:text="@string/level_18" />
+
+                <Button
+                    android:id="@+id/level_19_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_19"
+                    android:onClick="levelClick"
+                    android:text="@string/level_19" />
+
+                <Button
+                    android:id="@+id/level_20_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_20"
+                    android:onClick="levelClick"
+                    android:text="@string/level_20" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/level_21_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_21"
+                    android:onClick="levelClick"
+                    android:text="@string/level_21" />
+
+                <Button
+                    android:id="@+id/level_22_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_22"
+                    android:onClick="levelClick"
+                    android:text="@string/level_22" />
+
+                <Button
+                    android:id="@+id/level_23_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_23"
+                    android:onClick="levelClick"
+                    android:text="@string/level_23" />
+
+                <Button
+                    android:id="@+id/level_24_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_24"
+                    android:onClick="levelClick"
+                    android:text="@string/level_24" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/level_25_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_25"
+                    android:onClick="levelClick"
+                    android:text="@string/level_25" />
+
+                <Button
+                    android:id="@+id/level_26_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_26"
+                    android:onClick="levelClick"
+                    android:text="@string/level_26" />
+
+                <Button
+                    android:id="@+id/level_27_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_27"
+                    android:onClick="levelClick"
+                    android:text="@string/level_27" />
+
+                <Button
+                    android:id="@+id/level_28_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_28"
+                    android:onClick="levelClick"
+                    android:text="@string/level_28" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/level_29_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_29"
+                    android:onClick="levelClick"
+                    android:text="@string/level_29" />
+
+                <Button
+                    android:id="@+id/level_30_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_30"
+                    android:onClick="levelClick"
+                    android:text="@string/level_30" />
+
+                <Button
+                    android:id="@+id/level_31_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_31"
+                    android:onClick="levelClick"
+                    android:text="@string/level_31" />
+
+                <Button
+                    android:id="@+id/level_32_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_32"
+                    android:onClick="levelClick"
+                    android:text="@string/level_32" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/level_33_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_33"
+                    android:onClick="levelClick"
+                    android:text="@string/level_33" />
+
+                <Button
+                    android:id="@+id/level_34_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_34"
+                    android:onClick="levelClick"
+                    android:text="@string/level_34" />
+
+                <Button
+                    android:id="@+id/level_35_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_35"
+                    android:onClick="levelClick"
+                    android:text="@string/level_35" />
+
+                <Button
+                    android:id="@+id/level_36_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_36"
+                    android:onClick="levelClick"
+                    android:text="@string/level_36" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/level_37_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_37"
+                    android:onClick="levelClick"
+                    android:text="@string/level_37" />
+
+                <Button
+                    android:id="@+id/level_38_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_38"
+                    android:onClick="levelClick"
+                    android:text="@string/level_38" />
+
+                <Button
+                    android:id="@+id/level_39_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_39"
+                    android:onClick="levelClick"
+                    android:text="@string/level_39" />
+
+                <Button
+                    android:id="@+id/level_40_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_40"
+                    android:onClick="levelClick"
+                    android:text="@string/level_40" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/level_41_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_41"
+                    android:onClick="levelClick"
+                    android:text="@string/level_41" />
+
+                <Button
+                    android:id="@+id/level_42_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_42"
+                    android:onClick="levelClick"
+                    android:text="@string/level_42" />
+
+                <Button
+                    android:id="@+id/level_43_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_43"
+                    android:onClick="levelClick"
+                    android:text="@string/level_43" />
+
+                <Button
+                    android:id="@+id/level_44_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_44"
+                    android:onClick="levelClick"
+                    android:text="@string/level_44" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/level_45_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_45"
+                    android:onClick="levelClick"
+                    android:text="@string/level_45" />
+
+                <Button
+                    android:id="@+id/level_46_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_46"
+                    android:onClick="levelClick"
+                    android:text="@string/level_46" />
+
+                <Button
+                    android:id="@+id/level_47_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_47"
+                    android:onClick="levelClick"
+                    android:text="@string/level_47" />
+
+                <Button
+                    android:id="@+id/level_48_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_48"
+                    android:onClick="levelClick"
+                    android:text="@string/level_48" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/level_49_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_49"
+                    android:onClick="levelClick"
+                    android:text="@string/level_49" />
+
+                <Button
+                    android:id="@+id/level_50_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_50"
+                    android:onClick="levelClick"
+                    android:text="@string/level_50" />
+
+                <Button
+                    android:id="@+id/level_51_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_51"
+                    android:onClick="levelClick"
+                    android:text="@string/level_51" />
+
+                <Button
+                    android:id="@+id/level_52_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_52"
+                    android:onClick="levelClick"
+                    android:text="@string/level_52" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/level_53_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_53"
+                    android:onClick="levelClick"
+                    android:text="@string/level_53" />
+
+                <Button
+                    android:id="@+id/level_54_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_54"
+                    android:onClick="levelClick"
+                    android:text="@string/level_54" />
+
+                <Button
+                    android:id="@+id/level_55_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_55"
+                    android:onClick="levelClick"
+                    android:text="@string/level_55" />
+
+                <Button
+                    android:id="@+id/level_56_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_56"
+                    android:onClick="levelClick"
+                    android:text="@string/level_56" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/level_57_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_57"
+                    android:onClick="levelClick"
+                    android:text="@string/level_57" />
+
+                <Button
+                    android:id="@+id/level_58_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_58"
+                    android:onClick="levelClick"
+                    android:text="@string/level_58" />
+
+                <Button
+                    android:id="@+id/level_59_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_59"
+                    android:onClick="levelClick"
+                    android:text="@string/level_59" />
+
+                <Button
+                    android:id="@+id/level_60_btn"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/level_60"
+                    android:onClick="levelClick"
+                    android:text="@string/level_60" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="5dp"
+        android:text="@string/level_select"
+        android:textColor="@android:color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tutorial_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginBottom="16dp"
+        android:background="#d72e2e"
+        android:text="@string/tutorial_btn"
+        android:textColor="@android:color/black"
+        android:onClick="levelClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/back_to_main_btn"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/holo_blue_light"
+        android:onClick="levelClick"
+        android:text="back"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintStart_toEndOf="@+id/tutorial_btn" />
+
+    <Button
+        android:id="@+id/menu"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/menu"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
